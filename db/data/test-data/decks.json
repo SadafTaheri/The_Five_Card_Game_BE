@@ -1,0 +1,30 @@
+[
+    {
+        "name": "deck_1",
+        "profile_id": "1"
+    },
+    {
+        "name": "deck_2",
+        "profile_id": "1"
+    },
+    {
+        "name": "deck_3",
+        "profile_id": "3"
+    },
+    {
+        "name": "deck_4",
+        "profile_id": "5"
+    },
+    {
+        "name": "deck_5",
+        "profile_id": "6"
+    },
+    {
+        "name": "deck_6",
+        "profile_id": "1"
+    },
+    {
+        "name": "deck_7",
+        "profile_id": "7"
+    }
+]

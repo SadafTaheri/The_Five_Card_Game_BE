@@ -1,0 +1,65 @@
+[
+    {
+        "name": "character_1",
+        "health": "10",
+        "damage": "10",
+        "point_cost": "100",
+        "shop_cost": "50",
+        "ability_id": "1",
+        "image_url": "url_1"
+    },
+    {
+        "name": "character_2",
+        "health": "20",
+        "damage": "20",
+        "point_cost": "200",
+        "shop_cost": "100",
+        "ability_id": "2",
+        "image_url": "url_2"
+    },
+    {
+        "name": "character_3",
+        "health": "15",
+        "damage": "25",
+        "point_cost": "250",
+        "shop_cost": "70",
+        "ability_id": "3",
+        "image_url": "url_3"
+    },
+    {
+        "name": "character_4",
+        "health": "5",
+        "damage": "7",
+        "point_cost": "50",
+        "shop_cost": "40",
+        "ability_id": "4",
+        "image_url": "url_4"
+    },
+    {
+        "name": "character_5",
+        "health": "15",
+        "damage": "5",
+        "point_cost": "100",
+        "shop_cost": "50",
+        "ability_id": "5",
+        "image_url": "url_5"
+    },
+    {
+        "name": "character_6",
+        "health": "8",
+        "damage": "7",
+        "point_cost": "150",
+        "shop_cost": "80",
+        "ability_id": "6",
+        "image_url": "url_6"
+    },
+    {
+        "name": "character_7",
+        "health": "3",
+        "damage": "6",
+        "point_cost": "100",
+        "shop_cost": "50",
+        "ability_id": "7",
+        "image_url": "url_7"
+    }
+]

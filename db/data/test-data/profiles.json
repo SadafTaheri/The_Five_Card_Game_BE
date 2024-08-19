@@ -1,0 +1,37 @@
+[
+    {
+        "account_id": "1",
+        "username": "profile_1",
+        "currency": "1000"
+    },
+    {
+        "account_id": "2",
+        "username": "profile_2",
+        "currency": "2000"
+    },
+    {
+        "account_id": "3",
+        "username": "profile_3",
+        "currency": "1500"
+    },
+    {
+        "account_id": "4",
+        "username": "profile_4",
+        "currency": "500"
+    },
+    {
+        "account_id": "5",
+        "username": "profile_5",
+        "currency": "0"
+    },
+    {
+        "account_id": "6",
+        "username": "profile_6",
+        "currency": "99999"
+    },
+    {
+        "account_id": "7",
+        "username": "profile_7",
+        "currency": "7632"
+    }
+]

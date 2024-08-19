@@ -1,0 +1,66 @@
+[
+    {
+        "name": "ability_1",
+        "description": "description_1",
+        "type": "attack",
+        "strength": "1",
+        "image_url": "url_1",
+        "ability_cost": "1"
+    },
+    {
+        "name": "ability_2",
+        "description": "description_2",
+        "type": "heal",
+        "strength": "2",
+        "image_url": "url_2",
+        "ability_cost": "2"
+    },
+    {
+        "name": "ability_3",
+        "description": "description_3",
+        "type": "heal",
+        "strength": "3",
+        "image_url": "url_3",
+        "ability_cost": "3"
+    },
+    {
+        "name": "ability_4",
+        "description": "description_4",
+        "type": "attack",
+        "strength": "4",
+        "image_url": "url_4",
+        "ability_cost": "4"
+    },
+    {
+        "name": "ability_5",
+        "description": "description_5",
+        "type": "attack",
+        "strength": "5",
+        "image_url": "url_5",
+        "ability_cost": "5"
+    },
+    {
+        "name": "ability_6",
+        "description": "description_6",
+        "type": "heal",
+        "strength": "6",
+        "image_url": "url_6",
+        "ability_cost": "6"
+    },
+    {
+        "name": "ability_7",
+        "description": "description_7",
+        "type": "heal",
+        "strength": "7",
+        "image_url": "url_7",
+        "ability_cost": "7"
+    },
+    {
+        "name": "ability_8",
+        "description": "description_8",
+        "type": "attack",
+        "strength": "8",
+        "image_url": "url_8",
+        "ability_cost": "8"
+    }
+]
