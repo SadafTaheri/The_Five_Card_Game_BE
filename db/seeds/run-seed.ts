@@ -1,5 +1,12 @@
-const seed = require('./seed')
+const seed = require("./seed");
+import * as testData from "../data/test-data";
 
-seed()
+seed(
+    testData.accounts_data,
+    testData.profiles_data,
+    testData.abilities_data,
+    testData.characters_data,
+    testData.decks_data
+);
 
-export {}
+export {};

@@ -50,7 +50,7 @@
         "damage": "7",
         "point_cost": "150",
         "shop_cost": "80",
-        "ability_id": "6",
+        "ability_name": "6",
         "image_url": "url_6"
     },
     {
