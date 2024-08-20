@@ -5,7 +5,7 @@
         "damage": "10",
         "point_cost": "100",
         "shop_cost": "50",
-        "ability_id": "1",
+        "ability_name": "ability_1",
         "image_url": "url_1"
     },
     {
@@ -14,7 +14,7 @@
         "damage": "20",
         "point_cost": "200",
         "shop_cost": "100",
-        "ability_id": "2",
+        "ability_name": "ability_2",
         "image_url": "url_2"
     },
     {
@@ -23,7 +23,7 @@
         "damage": "25",
         "point_cost": "250",
         "shop_cost": "70",
-        "ability_id": "3",
+        "ability_name": "ability_3",
         "image_url": "url_3"
     },
     {
@@ -32,7 +32,7 @@
         "damage": "7",
         "point_cost": "50",
         "shop_cost": "40",
-        "ability_id": "4",
+        "ability_name": "ability_4",
         "image_url": "url_4"
     },
     {
@@ -41,7 +41,7 @@
         "damage": "5",
         "point_cost": "100",
         "shop_cost": "50",
-        "ability_id": "5",
+        "ability_name": "ability_5",
         "image_url": "url_5"
     },
     {
@@ -50,7 +50,7 @@
         "damage": "7",
         "point_cost": "150",
         "shop_cost": "80",
-        "ability_name": "6",
+        "ability_name": "ability_6",
         "image_url": "url_6"
     },
     {
@@ -59,7 +59,7 @@
         "damage": "6",
         "point_cost": "100",
         "shop_cost": "50",
-        "ability_id": "7",
+        "ability_name": "ability_7",
         "image_url": "url_7"
     }
 ]
