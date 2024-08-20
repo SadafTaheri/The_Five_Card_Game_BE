@@ -1,0 +1,992 @@
+[
+    {
+        "name": "Jon Snow",
+        "health": "85",
+        "damage": "40",
+        "point_cost": "750",
+        "shop_cost": "3500",
+        "ability_name": "Frost Strike",
+        "image_url": "https://wallpapers.com/images/hd/throne-jon-snow-game-of-thrones-qyptpol8ztg2ihkb.jpg"
+    },
+    {
+        "name": "Daenerys Targaryen",
+        "health": "75",
+        "damage": "45",
+        "point_cost": "770",
+        "shop_cost": "3400",
+        "ability_name": "Dragon's Fury",
+        "image_url": "https://static.wikia.nocookie.net/greatmultiverse/images/7/77/Daenarys_and_dragons.jpg/revision/latest?cb=20240330220445"
+    },
+    {
+        "name": "Rick Sanchez",
+        "health": "70",
+        "damage": "30",
+        "point_cost": "580",
+        "shop_cost": "2600",
+        "ability_name": "Quantum Discharge",
+        "image_url": "https://static.wikia.nocookie.net/omniversal-battlefield/images/e/e1/Rickfinhd_by_nyarlah-dbhuvw8.jpg/revision/latest/scale-to-width-down/400?cb=20180225043403"
+    },
+    {
+        "name": "Morty Smith",
+        "health": "50",
+        "damage": "20",
+        "point_cost": "400",
+        "shop_cost": "2200",
+        "ability_name": "Temporal Shield",
+        "image_url": "https://static.wikia.nocookie.net/rickandmorty/images/3/3e/Evil_Morty_Unmortricken.jpg/revision/latest?cb=20231114234616"
+    },
+    {
+        "name": "Titan Fist",
+        "health": "90",
+        "damage": "25",
+        "point_cost": "640",
+        "shop_cost": "3000",
+        "ability_name": "Titan Fist",
+        "image_url": "https://gdm-assets.b-cdn.net/images/ncavvykf/gfinityesports/4eeff720a719e5148b7fe191dc4d7b6bb8a33099-1920x1080.jpg?rect=0,36,1920,1008&w=1200&h=630&auto=format"
+    },
+    {
+        "name": "Homer Simpson",
+        "health": "80",
+        "damage": "15",
+        "point_cost": "505",
+        "shop_cost": "2500",
+        "ability_name": "Invigorating Surge",
+        "image_url": "https://static.wikia.nocookie.net/simpsons/images/b/bd/Homer_Simpson.png"
+    },
+    {
+        "name": "Elsa",
+        "health": "65",
+        "damage": "45",
+        "point_cost": "665",
+        "shop_cost": "3200",
+        "ability_name": "Frozen Barrage",
+        "image_url": "https://akns-images.eonline.com/eol_images/Entire_Site/2018128/rs_634x1024-180228112629-634-elsa-frozen.jpg?fit=around%7C634:1024&output-quality=90&crop=634:1024;center,top"
+    },
+    {
+        "name": "Simba",
+        "health": "70",
+        "damage": "35",
+        "point_cost": "605",
+        "shop_cost": "2900",
+        "ability_name": "Royal Roar",
+        "image_url": "https://qph.cf2.quoracdn.net/main-qimg-84aeb74ca0dc04af1ac7a6d208080fa4-pjlq"
+    },
+    {
+        "name": "Woody",
+        "health": "50",
+        "damage": "10",
+        "point_cost": "300",
+        "shop_cost": "1800",
+        "ability_name": "Sharpshooter's Precision",
+        "image_url": "https://media-cldnry.s-nbcnews.com/image/upload/t_fit-1500w,f_auto,q_auto:best/streams/2012/February/120220/60615-tb-110509-woody-3p.jpg"
+    },
+    {
+        "name": "Ash Ketchum",
+        "health": "60",
+        "damage": "40",
+        "point_cost": "530",
+        "shop_cost": "2600",
+        "ability_name": "Electric Surge",
+        "image_url": "https://static1.cbrimages.com/wordpress/wp-content/uploads/2021/07/ash-ketchum-accomplishments-pokemon-2.jpg"
+    },
+    {
+        "name": "Pikachu",
+        "health": "55",
+        "damage": "45",
+        "point_cost": "545",
+        "shop_cost": "2700",
+        "ability_name": "Thunderbolt Strike",
+        "image_url": "https://i0.wp.com/www.eastmojo.com/wp-content/uploads/2023/03/Untitled-design-24.png?fit=1200%2C675&ssl=1"
+    },
+    {
+        "name": "Terminator",
+        "health": "95",
+        "damage": "50",
+        "point_cost": "875",
+        "shop_cost": "4700",
+        "ability_name": "Battle Enhancement",
+        "image_url": "https://cdn.vox-cdn.com/thumbor/9nbXok5OoYQn59zohWeVrW7C814=/0x0:1020x680/2000x1333/filters:focal(496x288:497x289)/cdn2.vox-cdn.com/assets/4658579/terminator_endoskeleton_1020.jpg"
+    },
+    {
+        "name": "Luke Skywalker",
+        "health": "85",
+        "damage": "45",
+        "point_cost": "770",
+        "shop_cost": "3500",
+        "ability_name": "Force Push",
+        "image_url": "https://movies.mxdwn.com/wp-content/uploads/2023/06/luke-skywalker.jpg"
+    },
+    {
+        "name": "Darth Vader",
+        "health": "100",
+        "damage": "50",
+        "point_cost": "905",
+        "shop_cost": "5000",
+        "ability_name": "Force Choke",
+        "image_url": "https://nsabers.com/cdn/shop/articles/bebec223da75d29d8e03027fd2882262.png?v=1708781179"
+    },
+    {
+        "name": "Vi",
+        "health": "75",
+        "damage": "45",
+        "point_cost": "715",
+        "shop_cost": "3400",
+        "ability_name": "Rocket Barrage",
+        "image_url": "https://miro.medium.com/v2/resize:fit:1400/1*P4PdJq4ZKkcliA-N795DSA.jpeg"
+    },
+    {
+        "name": "Jinx",
+        "health": "60",
+        "damage": "50",
+        "point_cost": "660",
+        "shop_cost": "3200",
+        "ability_name": "Overcharge Blast",
+        "image_url": "https://a1cf74336522e87f135f-2f21ace9a6cf0052456644b80fa06d4f.ssl.cf2.rackcdn.com/images/characters/large/800/Jinx.League-of-Legends.webp"
+    },
+    {
+        "name": "Iron Man",
+        "health": "90",
+        "damage": "55",
+        "point_cost": "875",
+        "shop_cost": "4600",
+        "ability_name": "Repulsor Wave",
+        "image_url": "https://static1.cbrimages.com/wordpress/wp-content/uploads/2022/12/iron-man-1.jpg"
+    },
+    {
+        "name": "Captain America",
+        "health": "95",
+        "damage": "50",
+        "point_cost": "905",
+        "shop_cost": "4800",
+        "ability_name": "Shield Wall",
+        "image_url": "https://static.wikia.nocookie.net/vsdebating/images/b/ba/Captain_america_PNG50.png/revision/latest/scale-to-width-down/400?cb=20180123173800"
+    },
+    {
+        "name": "Batman",
+        "health": "85",
+        "damage": "50",
+        "point_cost": "805",
+        "shop_cost": "4300",
+        "ability_name": "Bat Sonic Wave",
+        "image_url": "https://static.dc.com/dc/files/default_images/Char_Profile_Batman_20190116_5c3fc4b40faec2.47318964.jpg"
+    },
+    {
+        "name": "Superman",
+        "health": "100",
+        "damage": "65",
+        "point_cost": "1030",
+        "shop_cost": "5000",
+        "ability_name": "Solar Flare",
+        "image_url": "https://cdn.mos.cms.futurecdn.net/YaYA3fSe5L4wkvzUQUeR2X-1200-80.jpg"
+    },
+    {
+        "name": "Thanos",
+        "health": "100",
+        "damage": "60",
+        "point_cost": "985",
+        "shop_cost": "5000",
+        "ability_name": "Infinity Crush",
+        "image_url": "https://i.ebayimg.com/images/g/CHwAAOSwCmljNu3P/s-l400.jpg"
+    },
+    {
+        "name": "Thor",
+        "health": "95",
+        "damage": "55",
+        "point_cost": "935",
+        "shop_cost": "4900",
+        "ability_name": "Thunder Strike",
+        "image_url": "https://comicvine.gamespot.com/a/uploads/original/11135/111354760/6577648-1aee242e9efb7d22c7c4775e63928267.jpg"
+    },
+    {
+        "name": "Wonder Woman",
+        "health": "90",
+        "damage": "50",
+        "point_cost": "855",
+        "shop_cost": "4500",
+        "ability_name": "Divine Smash",
+        "image_url": "https://i.pinimg.com/736x/c7/93/fe/c793fe360dbc9b1127985f7d938e1ec8.jpg"
+    },
+    {
+        "name": "Spider-Man",
+        "health": "80",
+        "damage": "45",
+        "point_cost": "755",
+        "shop_cost": "4300",
+        "ability_name": "Web Entangle",
+        "image_url": "https://comicvine.gamespot.com/a/uploads/scale_super/11114/111148699/4825425-8849354250-ULTIM.jpg"
+    },
+    {
+        "name": "Black Panther",
+        "health": "85",
+        "damage": "50",
+        "point_cost": "805",
+        "shop_cost": "4400",
+        "ability_name": "Shadow Slash",
+        "image_url": "https://i.pinimg.com/736x/2b/22/0a/2b220ad838ecdc3056d2847726fae843.jpg"
+    },
+    {
+        "name": "Deadpool",
+        "health": "70",
+        "damage": "55",
+        "point_cost": "725",
+        "shop_cost": "4200",
+        "ability_name": "Gamma Burst",
+        "image_url": "https://i.pinimg.com/736x/c4/95/d0/c495d0abbf9f0070da96e918bf722c2e.jpg"
+    },
+    {
+        "name": "Hulk",
+        "health": "100",
+        "damage": "70",
+        "point_cost": "1130",
+        "shop_cost": "5000",
+        "ability_name": "Ground Shaker",
+        "image_url": "https://i.pinimg.com/736x/4f/46/3a/4f463aa01d844ee3f38c5682828e6a95.jpg"
+    },
+    {
+        "name": "Doctor Strange",
+        "health": "75",
+        "damage": "45",
+        "point_cost": "710",
+        "shop_cost": "3800",
+        "ability_name": "Arcane Surge",
+        "image_url": "https://w0.peakpx.com/wallpaper/712/582/HD-wallpaper-dr-strange-avenger-superhero-thumbnail.jpg"
+    },
+    {
+        "name": "Aquaman",
+        "health": "90",
+        "damage": "50",
+        "point_cost": "855",
+        "shop_cost": "4700",
+        "ability_name": "Tidal Wave",
+        "image_url": "https://www.mensjournal.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTk2MTM1Nzc2NDEzMzYxMjk3/aquamna-momoa-classic.jpg"
+    },
+    {
+        "name": "The Flash",
+        "health": "85",
+        "damage": "45",
+        "point_cost": "755",
+        "shop_cost": "4400",
+        "ability_name": "Speed Burst",
+        "image_url": "https://images.bauerhosting.com/empire/2023/06/flash-3.jpg?ar=16%3A9&fit=crop&crop=top&auto=format&w=1440&q=80"
+    },
+    {
+        "name": "Harley Quinn",
+        "health": "70",
+        "damage": "40",
+        "point_cost": "630",
+        "shop_cost": "3500",
+        "ability_name": "Vortex Strike",
+        "image_url": "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-harley-01-fddad9fc-f145-4eb5-b469-05e940f18e84.jpg?w=1581&h=788&crop=1"
+    },
+    {
+        "name": "Joker",
+        "health": "75",
+        "damage": "45",
+        "point_cost": "710",
+        "shop_cost": "3700",
+        "ability_name": "Chaos Blast",
+        "image_url": "https://miro.medium.com/v2/resize:fit:590/1*Qkduspj3kb_laI3iWZPQSQ.jpeg"
+    },
+    {
+        "name": "Groot",
+        "health": "85",
+        "damage": "40",
+        "point_cost": "705",
+        "shop_cost": "3900",
+        "ability_name": "Root Smash",
+        "image_url": "https://grist.org/wp-content/uploads/2014/09/groot.jpg?quality=75&strip=all"
+    },
+    {
+        "name": "Rocket Raccoon",
+        "health": "65",
+        "damage": "45",
+        "point_cost": "635",
+        "shop_cost": "3500",
+        "ability_name": "Rocket Barrage",
+        "image_url": "https://static1.cbrimages.com/wordpress/wp-content/uploads/2022/10/Collage-Maker-26-Oct-2022-1252-AM.jpg"
+    },
+    {
+        "name": "Gamora",
+        "health": "80",
+        "damage": "50",
+        "point_cost": "755",
+        "shop_cost": "4300",
+        "ability_name": "Blade Fury",
+        "image_url": "https://www.joblo.com/wp-content/uploads/2023/07/guardians-of-the-galaxy-3-zoe-saldana-gamora-ending.jpg"
+    },
+    {
+        "name": "Star-Lord",
+        "health": "75",
+        "damage": "45",
+        "point_cost": "710",
+        "shop_cost": "3900",
+        "ability_name": "Star Blaster",
+        "image_url": "https://www.denofgeek.com/wp-content/uploads/2023/05/star-lord.jpg"
+    },
+    {
+        "name": "Drax",
+        "health": "85",
+        "damage": "50",
+        "point_cost": "805",
+        "shop_cost": "4400",
+        "ability_name": "Titan Smash",
+        "image_url": "https://cdn.marvel.com/content/1x/025drx_ons_inl_03_3.jpg"
+    },
+    {
+        "name": "Scarlet Witch",
+        "health": "75",
+        "damage": "60",
+        "point_cost": "815",
+        "shop_cost": "4200",
+        "ability_name": "Hex Blast",
+        "image_url": "https://www.themarysue.com/wp-content/uploads/2023/03/scarlet-witch.jpeg"
+    },
+    {
+        "name": "Vision",
+        "health": "80",
+        "damage": "55",
+        "point_cost": "815",
+        "shop_cost": "4400",
+        "ability_name": "Solar Surge",
+        "image_url": "https://media.licdn.com/dms/image/D5612AQGa9ZTOyuC_sA/article-cover_image-shrink_720_1280/0/1687951587896?e=2147483647&v=beta&t=1eYM703EZ4nN9ankIpERFJxGKWzQ0U-o9ekF8x0mbQc"
+    },
+    {
+        "name": "Loki",
+        "health": "75",
+        "damage": "45",
+        "point_cost": "710",
+        "shop_cost": "3800",
+        "ability_name": "Illusion Strike",
+        "image_url": "https://www.hollywoodreporter.com/wp-content/uploads/2024/04/MCDTHRA_EC117-H-2024.jpg?w=1024"
+    },
+    {
+        "name": "Venom",
+        "health": "85",
+        "damage": "50",
+        "point_cost": "805",
+        "shop_cost": "4500",
+        "ability_name": "Symbiote Slam",
+        "image_url": "https://cdn.mos.cms.futurecdn.net/xeNrVBfTrDY4dyzUaemXUW.jpg"
+    },
+    {
+        "name": "Green Lantern",
+        "health": "90",
+        "damage": "55",
+        "point_cost": "930",
+        "shop_cost": "4800",
+        "ability_name": "Lantern's Fury",
+        "image_url": "https://cdn.mos.cms.futurecdn.net/LF2NbNM5nKNbKaPqPpihG5-1200-80.jpg"
+    },
+    {
+        "name": "Boba Fett",
+        "health": "70",
+        "damage": "50",
+        "point_cost": "725",
+        "shop_cost": "3900",
+        "ability_name": "Jet Pack Assault",
+        "image_url": "https://lumiere-a.akamaihd.net/v1/images/61c0fe9938fd010001635298-image_0e5ba507.jpeg?region=0,0,1536,864"
+    },
+    {
+        "name": "Yoda",
+        "health": "85",
+        "damage": "45",
+        "point_cost": "755",
+        "shop_cost": "4300",
+        "ability_name": "Force Wave",
+        "image_url": "https://static.wikia.nocookie.net/battlefront/images/4/43/Yoda_close_up.jpeg/revision/latest/scale-to-width-down/1200?cb=20190325130919"
+    },
+    {
+        "name": "Obi-Wan Kenobi",
+        "health": "80",
+        "damage": "50",
+        "point_cost": "755",
+        "shop_cost": "4400",
+        "ability_name": "Force Slash",
+        "image_url": "https://lumiere-a.akamaihd.net/v1/images/62bf0e03e8459d0001f4881b-image_71900d89.jpeg?region=336%2C0%2C864%2C864"
+    },
+    {
+        "name": "R2-D2",
+        "health": "60",
+        "damage": "20",
+        "point_cost": "445",
+        "shop_cost": "2700",
+        "ability_name": "Healing Aura",
+        "image_url": "https://lumiere-a.akamaihd.net/v1/images/r2-d2-main_f315b094.jpeg?region=273%2C0%2C951%2C536"
+    },
+    {
+        "name": "Chewbacca",
+        "health": "90",
+        "damage": "50",
+        "point_cost": "855",
+        "shop_cost": "4600",
+        "ability_name": "Healing Howl",
+        "image_url": "https://lumiere-a.akamaihd.net/v1/images/5e94826f7d7499000120d564-image_f9b9d30e.jpeg?region=0%2C48%2C1536%2C768"
+    },
+    {
+        "name": "Han Solo",
+        "health": "75",
+        "damage": "45",
+        "point_cost": "710",
+        "shop_cost": "3800",
+        "ability_name": "Blaster Barrage",
+        "image_url": "https://static1.cbrimages.com/wordpress/wp-content/uploads/2017/08/han-solo-header.jpg"
+    },
+    {
+        "name": "Mace Windu",
+        "health": "85",
+        "damage": "45",
+        "point_cost": "755",
+        "shop_cost": "4300",
+        "ability_name": "Force Empowerment",
+        "image_url": "https://townsquare.media/site/442/files/2013/07/Mace-Windu.jpg?w=780&q=75"
+    },
+    {
+        "name": "Kylo Ren",
+        "health": "90",
+        "damage": "50",
+        "point_cost": "855",
+        "shop_cost": "4500",
+        "ability_name": "Dark Energy Surge",
+        "image_url": "https://static1.moviewebimages.com/wordpress/wp-content/uploads/article/zX81vwPZN5AHBCROSQqYnSfETgbB6G.jpg"
+    },
+    {
+        "name": "Tommy Pickles",
+        "health": "30",
+        "damage": "10",
+        "point_cost": "200",
+        "shop_cost": "1000",
+        "ability_name": "Brave Heart",
+        "image_url": "https://i.pinimg.com/564x/6d/fa/36/6dfa36e5f7c420921726f3bf378ed113.jpg"
+    },
+    {
+        "name": "Angelica Pickles",
+        "health": "25",
+        "damage": "10",
+        "point_cost": "185",
+        "shop_cost": "900",
+        "ability_name": "Clever Trick",
+        "image_url": "https://wallpapers.com/images/hd/crown-princess-angelica-pickles-f1xnfv6f5a44b6zn.jpg"
+    },
+    {
+        "name": "Dil Pickles",
+        "health": "20",
+        "damage": "5",
+        "point_cost": "135",
+        "shop_cost": "800",
+        "ability_name": "Tiny Distraction",
+        "image_url": "https://static.wikia.nocookie.net/great-characters/images/1/10/EC53E4F7-3F37-48D8-AFF3-825699328F09.jpeg/revision/latest?cb=20210810072530"
+    },
+    {
+        "name": "Elmo",
+        "health": "30",
+        "damage": "10",
+        "point_cost": "200",
+        "shop_cost": "1200",
+        "ability_name": "Encouraging Words",
+        "image_url": "https://ik.imagekit.io/storybird/images/8c82b2ee-001f-493d-935b-629774ac0ba6/0_180351820.png"
+    },
+    {
+        "name": "Oscar the Grouch",
+        "health": "25",
+        "damage": "15",
+        "point_cost": "200",
+        "shop_cost": "1100",
+        "ability_name": "Grumpy Roar",
+        "image_url": "https://soranews24.com/wp-content/uploads/sites/3/2014/03/qzixn52bkp6vsa.jpg?w=580"
+    },
+    {
+        "name": "Grover",
+        "health": "35",
+        "damage": "15",
+        "point_cost": "245",
+        "shop_cost": "1300",
+        "ability_name": "Defensive Stance",
+        "image_url": "https://indie88.com/wp-content/uploads/2018/12/grover.jpg"
+    },
+    {
+        "name": "Bert",
+        "health": "30",
+        "damage": "10",
+        "point_cost": "200",
+        "shop_cost": "1000",
+        "ability_name": "Hesitant Foe",
+        "image_url": "https://soranews24.com/wp-content/uploads/sites/3/2014/03/qzixnqazkp6vra.jpg?w=482"
+    },
+    {
+        "name": "Ernie",
+        "health": "30",
+        "damage": "10",
+        "point_cost": "200",
+        "shop_cost": "1000",
+        "ability_name": "Healing Harmony",
+        "image_url": "https://pbs.twimg.com/profile_images/1092454153585082368/QNM6C86g_400x400.jpg"
+    },
+    {
+        "name": "Daffy Duck",
+        "health": "45",
+        "damage": "15",
+        "point_cost": "345",
+        "shop_cost": "1800",
+        "ability_name": "Disorienting Quack",
+        "image_url": "https://i.pinimg.com/originals/c4/b6/ae/c4b6ae97a97d0445cb559734a28e72fa.jpg"
+    },
+    {
+        "name": "Tweety Bird",
+        "health": "25",
+        "damage": "10",
+        "point_cost": "185",
+        "shop_cost": "1100",
+        "ability_name": "Squeak Shock",
+        "image_url": "https://i.pinimg.com/originals/9f/dc/05/9fdc0553548bfebf4ecad656a565f024.jpg"
+    },
+    {
+        "name": "Sylvester the Cat",
+        "health": "30",
+        "damage": "15",
+        "point_cost": "225",
+        "shop_cost": "1500",
+        "ability_name": "Agile Evasion",
+        "image_url": "https://facts.net/wp-content/uploads/2023/09/17-facts-about-sylvester-looney-tunes-1693655812.jpg"
+    },
+    {
+        "name": "Speedy Gonzales",
+        "health": "40",
+        "damage": "15",
+        "point_cost": "275",
+        "shop_cost": "1400",
+        "ability_name": "Speed Surge",
+        "image_url": "https://mediaproxy.tvtropes.org/width/1200/https://static.tvtropes.org/pmwiki/pub/images/img_3462.jpeg"
+    },
+    {
+        "name": "Porky Pig",
+        "health": "35",
+        "damage": "10",
+        "point_cost": "245",
+        "shop_cost": "1200",
+        "ability_name": "Precision Focus",
+        "image_url": "https://i.ytimg.com/vi/GbMafIEZ6eM/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCIdNNjEDXKMtFFtnN-6IPQZ8zsjg"
+    },
+    {
+        "name": "Foghorn Leghorn",
+        "health": "45",
+        "damage": "15",
+        "point_cost": "345",
+        "shop_cost": "1600",
+        "ability_name": "Roar of Intimidation",
+        "image_url": "https://m.media-amazon.com/images/M/MV5BZWQ2Njg2MTEtMDg1Ni00YmVkLWJlMjgtYzk0OTgyZmZjZjk4XkEyXkFqcGdeQXVyNDgyODgxNjE@._V1_.jpg"
+    },
+    {
+        "name": "Pepe Le Pew",
+        "health": "35",
+        "damage": "10",
+        "point_cost": "245",
+        "shop_cost": "1300",
+        "ability_name": "Restorative Mist",
+        "image_url": "https://townsquare.media/site/252/files/2021/03/pepe-le-pew-controversy.jpg?w=1200&h=0&zc=1&s=0&a=t&q=89"
+    },
+    {
+        "name": "Bugs Bunny",
+        "health": "50",
+        "damage": "20",
+        "point_cost": "350",
+        "shop_cost": "2000",
+        "ability_name": "Trickster's Gambit",
+        "image_url": "https://static1.srcdn.com/wordpress/wp-content/uploads/2021/04/Space-Jam-2-Bugs-Bunny.jpg"
+    },
+    {
+        "name": "Tom Cat",
+        "health": "35",
+        "damage": "15",
+        "point_cost": "245",
+        "shop_cost": "1300",
+        "ability_name": "Shielded Swipe",
+        "image_url": "https://i.pinimg.com/originals/b6/78/03/b67803378ba3c26bfc4b7168d5b3e5ad.png"
+    },
+    {
+        "name": "Jerry Mouse",
+        "health": "25",
+        "damage": "10",
+        "point_cost": "185",
+        "shop_cost": "1100",
+        "ability_name": "Confusion Trick",
+        "image_url": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a2a9ef70-2334-407a-bc2a-bc5843be2ff7/dg9u7fa-dce97415-e210-4d0d-aad4-81e37edd5668.png/v1/fill/w_1280,h_966,q_80,strp/jerry_mouse_by_kentrelledward_dg9u7fa-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9OTY2IiwicGF0aCI6IlwvZlwvYTJhOWVmNzAtMjMzNC00MDdhLWJjMmEtYmM1ODQzYmUyZmY3XC9kZzl1N2ZhLWRjZTk3NDE1LWUyMTAtNGQwZC1hYWQ0LTgxZTM3ZWRkNTY2OC5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.5lPniLD90GKflopHpkLRN7hLpVsby745fWwHUfi0mFM"
+    },
+    {
+        "name": "Droopy Dog",
+        "health": "30",
+        "damage": "10",
+        "point_cost": "200",
+        "shop_cost": "1200",
+        "ability_name": "Vital Surge",
+        "image_url": "https://i0.wp.com/comedyforanimators.com/wp-content/uploads/2019/01/droopy.jpg?resize=400%2C300"
+    },
+    {
+        "name": "Little Red Riding Hood",
+        "health": "35",
+        "damage": "10",
+        "point_cost": "245",
+        "shop_cost": "1400",
+        "ability_name": "Protective Shield",
+        "image_url": "https://dwanppuubc5kh.cloudfront.net/OkhO5po/BoOl3h4.jpeg"
+    },
+    {
+        "name": "Snow White",
+        "health": "40",
+        "damage": "10",
+        "point_cost": "275",
+        "shop_cost": "1500",
+        "ability_name": "Barrier of Purity",
+        "image_url": "https://d23.com/app/uploads/2015/06/snow41160x600.jpg"
+    },
+    {
+        "name": "Cinderella",
+        "health": "45",
+        "damage": "15",
+        "point_cost": "320",
+        "shop_cost": "1700",
+        "ability_name": "Swift Strike",
+        "image_url": "https://media1.popsugar-assets.com/files/thumbor/d0nAk-LgIcvTNSEsvtY3tJ8udX8=/0x0:1452x1080/fit-in/792x589/top/filters:format_auto():upscale()/2020/09/02/725/n/1922283/05e316a35f4fc75868be40.09776669_.png"
+    },
+    {
+        "name": "Belle",
+        "health": "30",
+        "damage": "10",
+        "point_cost": "200",
+        "shop_cost": "1200",
+        "ability_name": "Restorative Wave",
+        "image_url": "https://girlsontopstees.com/cdn/shop/articles/belle-beauty-and-the-beast_0dd0d22a_copy.jpg?v=1681727469&width=1100"
+    },
+    {
+        "name": "Aurora",
+        "health": "25",
+        "damage": "5",
+        "point_cost": "165",
+        "shop_cost": "1000",
+        "ability_name": "Powerful Roar",
+        "image_url": "https://pm1.aminoapps.com/6899/9080a1df5d0eec8f10a2141b47b034bb03eb1fc0r1-450-450v2_00.jpg"
+    },
+    {
+        "name": "Ariel",
+        "health": "40",
+        "damage": "15",
+        "point_cost": "275",
+        "shop_cost": "1400",
+        "ability_name": "Healing Surge",
+        "image_url": "https://www.freep.com/gcdn/presto/2019/07/03/USAT/7ee50b2a-6acb-4924-a98b-b1d3045691c4-AP_Film-The_Little_Mermaid-Anniversary.JPG"
+    },
+    {
+        "name": "Mulan",
+        "health": "45",
+        "damage": "15",
+        "point_cost": "320",
+        "shop_cost": "1700",
+        "ability_name": "Impact Strike",
+        "image_url": "https://static1.srcdn.com/wordpress/wp-content/uploads/2019/07/Mulan-Cheats-During-Training.jpg"
+    },
+    {
+        "name": "Pocahontas",
+        "health": "40",
+        "damage": "10",
+        "point_cost": "275",
+        "shop_cost": "1500",
+        "ability_name": "Fortified Defense",
+        "image_url": "https://miro.medium.com/v2/resize:fit:3840/1*osBQBq0F-R9xP5fi9ZElcw.jpeg"
+    },
+    {
+        "name": "Tinker Bell",
+        "health": "25",
+        "damage": "5",
+        "point_cost": "165",
+        "shop_cost": "1100",
+        "ability_name": "Confusion Blast",
+        "image_url": "https://static.wikia.nocookie.net/disney/images/a/ac/Peter-pan-disneyscreencaps.com-1172.jpg/revision/latest?cb=20140501015013"
+    },
+    {
+        "name": "Nemo",
+        "health": "30",
+        "damage": "10",
+        "point_cost": "200",
+        "shop_cost": "1300",
+        "ability_name": "Energy Shield",
+        "image_url": "https://images.squarespace-cdn.com/content/v1/51cdafc4e4b09eb676a64e68/1470759792358-PXX6MGXZMUZWD6KMJNDV/nemo11.jpg"
+    },
+    {
+        "name": "Dory",
+        "health": "35",
+        "damage": "10",
+        "point_cost": "245",
+        "shop_cost": "1400",
+        "ability_name": "Rapid Assault",
+        "image_url": "https://news.cnrs.fr/sites/default/files/styles/visuel_principal/public/assets/images/finding-dory-k204_122fpub2.pub16.308_rgb.jpg"
+    },
+    {
+        "name": "Remy",
+        "health": "25",
+        "damage": "5",
+        "point_cost": "165",
+        "shop_cost": "1200",
+        "ability_name": "Healing Pulse",
+        "image_url": "https://themouseminute.wordpress.com/wp-content/uploads/2021/07/a4d26592-4897-4a72-b04a-20b84892f56e.jpeg"
+    },
+    {
+        "name": "Wall-E",
+        "health": "40",
+        "damage": "10",
+        "point_cost": "275",
+        "shop_cost": "1500",
+        "ability_name": "Attack Enhancement",
+        "image_url": "https://miro.medium.com/v2/resize:fit:810/0*-1JZmBvx3DZxBR1o.jpg"
+    },
+    {
+        "name": "E.T.",
+        "health": "25",
+        "damage": "10",
+        "point_cost": "185",
+        "shop_cost": "1000",
+        "ability_name": "Vitality Boost",
+        "image_url": "https://res.cloudinary.com/ybmedia/image/upload/c_crop,h_1125,w_2000,x_0,y_21/c_fill,f_auto,h_900,q_auto,w_1600/v1/m/a/c/acd9c520c19769ec1459e9ed234261b0b7fdc578/20-facts-might-know-et-extraterrestrial.jpg"
+    },
+    {
+        "name": "Max",
+        "health": "30",
+        "damage": "5",
+        "point_cost": "200",
+        "shop_cost": "1100",
+        "ability_name": "Zoomies",
+        "image_url": "https://i0.wp.com/www.rescuediva.com/wp-content/uploads/2022/12/Diva-Article-Max-Grinch-Dog-Prt-Scr-best-movie-walls-com-122322-369.jpg?ssl=1"
+    },
+    {
+        "name": "Grinch",
+        "health": "45",
+        "damage": "15",
+        "point_cost": "320",
+        "shop_cost": "1600",
+        "ability_name": "Grumpy Aura",
+        "image_url": "https://is1-ssl.mzstatic.com/image/thumb/ndYYFPH9QUmaiB34pfha7g/1200x675mf.jpg"
+    },
+    {
+        "name": "Gohan",
+        "health": "70",
+        "damage": "25",
+        "point_cost": "535",
+        "shop_cost": "2800",
+        "ability_name": "Energy Burst",
+        "image_url": "https://i.pinimg.com/originals/35/86/c8/3586c8c2bf881ee1cb14322023eca071.jpg"
+    },
+    {
+        "name": "Krillin",
+        "health": "60",
+        "damage": "20",
+        "point_cost": "470",
+        "shop_cost": "2500",
+        "ability_name": "Ultimate Healing",
+        "image_url": "https://i.pinimg.com/564x/8c/ae/b1/8caeb10df1ea58a687949f59e2c03c10.jpg"
+    },
+    {
+        "name": "Tien Shinhan",
+        "health": "65",
+        "damage": "25",
+        "point_cost": "485",
+        "shop_cost": "2600",
+        "ability_name": "Tri-Beam",
+        "image_url": "https://www.giantbomb.com/a/uploads/scale_medium/3/34651/3445456-tien.png"
+    },
+    {
+        "name": "Yamcha",
+        "health": "55",
+        "damage": "20",
+        "point_cost": "430",
+        "shop_cost": "2400",
+        "ability_name": "Supernova Blast",
+        "image_url": "https://qph.cf2.quoracdn.net/main-qimg-01ca3f1c8f5ab6c1f08bf84918dc3a96-lq"
+    },
+    {
+        "name": "Jiraiya",
+        "health": "65",
+        "damage": "30",
+        "point_cost": "485",
+        "shop_cost": "2600",
+        "ability_name": "Grand Sage's Wrath",
+        "image_url": "https://static0.gamerantimages.com/wordpress/wp-content/uploads/2022/11/1af947818b494921b83a251b49328f4f.png"
+    },
+    {
+        "name": "Kakashi Hatake",
+        "health": "70",
+        "damage": "25",
+        "point_cost": "535",
+        "shop_cost": "2800",
+        "ability_name": "Powerful Healing Surge",
+        "image_url": "https://wallpapercave.com/wp/wp9414346.jpg"
+    },
+    {
+        "name": "Sakura Haruno",
+        "health": "60",
+        "damage": "20",
+        "point_cost": "470",
+        "shop_cost": "2500",
+        "ability_name": "Power Surge",
+        "image_url": "https://i.pinimg.com/736x/8b/79/54/8b7954aff74769dd3124818b4fb99eb2.jpg"
+    },
+    {
+        "name": "Neji Hyuga",
+        "health": "55",
+        "damage": "25",
+        "point_cost": "430",
+        "shop_cost": "2400",
+        "ability_name": "Gentle Palm Heal",
+        "image_url": "https://static1.cbrimages.com/wordpress/wp-content/uploads/2020/08/Neji-Using-Gentle-Fist-Against-The-White-Zetsu-Army.jpg"
+    },
+    {
+        "name": "Naruto Uzumaki",
+        "health": "70",
+        "damage": "30",
+        "point_cost": "535",
+        "shop_cost": "2900",
+        "ability_name": "Rasengan Blast",
+        "image_url": "https://static.wikia.nocookie.net/naruto/images/d/d6/Naruto_Part_I.png/revision/latest/scale-to-width-down/300?cb=20210223094656"
+    },
+    {
+        "name": "Monkey D. Luffy",
+        "health": "65",
+        "damage": "25",
+        "point_cost": "485",
+        "shop_cost": "2700",
+        "ability_name": "Rubber Shield",
+        "image_url": "https://yt3.googleusercontent.com/c8p88q6z6Ba5q3053k7rcNV_7fgardb5Z0vMnisGoyS7ht1PN_sF5xhu4G1j_ZrBdK8W_Usj=s900-c-k-c0x00ffffff-no-rj"
+    },
+    {
+        "name": "Roronoa Zoro",
+        "health": "70",
+        "damage": "30",
+        "point_cost": "535",
+        "shop_cost": "2800",
+        "ability_name": "Sword Storm",
+        "image_url": "https://static.wikia.nocookie.net/five-world-war/images/3/32/WEFQbDN.jpg/revision/latest?cb=20161202153427"
+    },
+    {
+        "name": "Sanji",
+        "health": "60",
+        "damage": "25",
+        "point_cost": "470",
+        "shop_cost": "2600",
+        "ability_name": "Rapid Recovery",
+        "image_url": "https://cdn.myanimelist.net/s/common/uploaded_files/1476881633-e71f544272d9907d6041c44dec7f97fd.png"
+    },
+    {
+        "name": "Nico Robin",
+        "health": "55",
+        "damage": "20",
+        "point_cost": "430",
+        "shop_cost": "2400",
+        "ability_name": "Shadow Clones",
+        "image_url": "https://staticg.sportskeeda.com/editor/2022/03/669db-16477247716001-1920.jpg?w=640"
+    },
+    {
+        "name": "Wolverine",
+        "health": "70",
+        "damage": "30",
+        "point_cost": "535",
+        "shop_cost": "2900",
+        "ability_name": "Berserker Rage",
+        "image_url": "https://static1.srcdn.com/wordpress/wp-content/uploads/2020/05/Wolverine-1.jpg"
+    },
+    {
+        "name": "Cyclops",
+        "health": "60",
+        "damage": "25",
+        "point_cost": "470",
+        "shop_cost": "2500",
+        "ability_name": "Optic Blast",
+        "image_url": "https://www.dexerto.com/cdn-image/wp-content/uploads/2024/03/13/cyclops-x-men-header.jpg?width=3840&quality=60&format=auto"
+    },
+    {
+        "name": "Storm",
+        "health": "65",
+        "damage": "25",
+        "point_cost": "485",
+        "shop_cost": "2600",
+        "ability_name": "Tempest Fury",
+        "image_url": "https://static1.srcdn.com/wordpress/wp-content/uploads/2020/09/Storm-X-Men-cover-acuna.jpg"
+    },
+    {
+        "name": "Rogue",
+        "health": "55",
+        "damage": "20",
+        "point_cost": "430",
+        "shop_cost": "2400",
+        "ability_name": "Draining Embrace",
+        "image_url": "https://www.escapistmagazine.com/wp-content/uploads/2024/04/x-men_97_season_1_rogue_hands_behind_head.jpg?w=1200"
+    },
+    {
+        "name": "Jean Grey",
+        "health": "60",
+        "damage": "30",
+        "point_cost": "470",
+        "shop_cost": "2500",
+        "ability_name": "Psychic Surge",
+        "image_url": "https://fabulistmagazine.com/wp-content/uploads/2019/06/Jean-Grey-Phoenix-2.jpg"
+    },
+    {
+        "name": "Cyborg",
+        "health": "65",
+        "damage": "25",
+        "point_cost": "485",
+        "shop_cost": "2600",
+        "ability_name": "Defensive Barrier",
+        "image_url": "https://static.dc.com/sites/default/files/imce/2018/08-AUG/Cyborg_v01_r01_5b6c7d7bef1616.90753062.jpg"
+    },
+    {
+        "name": "Hawkgirl",
+        "health": "55",
+        "damage": "20",
+        "point_cost": "430",
+        "shop_cost": "2400",
+        "ability_name": "Aerial Assault",
+        "image_url": "https://static.wikia.nocookie.net/dcanimated/images/2/22/Hawkgirl_attacks_imperium.png/revision/latest/scale-to-width-down/500?cb=20180621170810"
+    },
+    {
+        "name": "Blue Beetle",
+        "health": "70",
+        "damage": "30",
+        "point_cost": "535",
+        "shop_cost": "2800",
+        "ability_name": "Energy Barrage",
+        "image_url": "https://staticg.sportskeeda.com/editor/2023/06/58ca4-16860889060932-1920.jpg?w=640"
+    },
+    {
+        "name": "Gotenks",
+        "health": "65",
+        "damage": "30",
+        "point_cost": "485",
+        "shop_cost": "2700",
+        "ability_name": "Super Energy Blast",
+        "image_url": "https://static.wikia.nocookie.net/dragonball/images/e/e8/GT_Gotenks.png/revision/latest/scale-to-width-down/886?cb=20180928163404"
+    },
+    {
+        "name": "Piccolo",
+        "health": "70",
+        "damage": "25",
+        "point_cost": "535",
+        "shop_cost": "2800",
+        "ability_name": "Concentrated Beam",
+        "image_url": "https://www.denofgeek.com/wp-content/uploads/2022/08/Dragon-Ball-Super-Super-Hero-Piccolo-Powers-Up.jpg?fit=2075%2C1170"
+    },
+    {
+        "name": "Vegito",
+        "health": "60",
+        "damage": "25",
+        "point_cost": "470",
+        "shop_cost": "2500",
+        "ability_name": "Focused Energy Wave",
+        "image_url": "https://static.wikia.nocookie.net/dragonball/images/6/66/VegitoSuperSaiyanNV.png/revision/latest/scale-to-width-down/640?cb=20130103162019"
+    },
+    {
+        "name": "Broly",
+        "health": "65",
+        "damage": "30",
+        "point_cost": "485",
+        "shop_cost": "2600",
+        "ability_name": "Fury Rampage",
+        "image_url": "https://static1.srcdn.com/wordpress/wp-content/uploads/2019/06/Broly-in-Dragon-Ball-Super-Broly.jpg"
+    }
+]
