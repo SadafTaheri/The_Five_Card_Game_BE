@@ -1,12 +1,12 @@
 const seed = require("./seed");
-import * as testData from "../data/test-data";
+import * as DevData from "../data/development-data";
 
 seed(
-    testData.accounts_data,
-    testData.profiles_data,
-    testData.abilities_data,
-    testData.characters_data,
-    testData.decks_data
+    DevData.accounts_data,
+    DevData.profiles_data,
+    DevData.abilities_data,
+    DevData.characters_data,
+    DevData.decks_data
 );
 
 export {};

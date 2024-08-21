@@ -6,7 +6,7 @@
     "scripts": {
         "test": "jest",
         "setup-dbs": "psql -f ./db/setup_db.sql",
-        "run-seed": "node dist/seeds/run-seed.js"
+        "run-seed": "node dist/db/seeds/run-seed.js"
     },
     "author": "",
     "license": "ISC",
