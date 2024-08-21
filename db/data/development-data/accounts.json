@@ -1,0 +1,82 @@
+[
+    {
+        "account_name": "john_doe",
+        "password": "Jd!2023pass"
+    },
+    {
+        "account_name": "jane.smith",
+        "password": "Smith!Secure456"
+    },
+    {
+        "account_name": "michael_b",
+        "password": "Mike#7823"
+    },
+    {
+        "account_name": "emily_w",
+        "password": "Em1lyW@2024"
+    },
+    {
+        "account_name": "david.j",
+        "password": "D@vidJ2024!"
+    },
+    {
+        "account_name": "sarah.connor",
+        "password": "S@rahC0nnor"
+    },
+    {
+        "account_name": "robert_b",
+        "password": "Rob#2024"
+    },
+    {
+        "account_name": "linda.williams",
+        "password": "Linda$W!lliams"
+    },
+    {
+        "account_name": "kevin_m",
+        "password": "Kev!nM#123"
+    },
+    {
+        "account_name": "ashley.p",
+        "password": "Ash$leyP2023"
+    },
+    {
+        "account_name": "daniel.s",
+        "password": "D@nie!S2024"
+    },
+    {
+        "account_name": "nancy.jones",
+        "password": "N@ncJ0nes!"
+    },
+    {
+        "account_name": "steve_h",
+        "password": "St3v3H@2023"
+    },
+    {
+        "account_name": "brenda.k",
+        "password": "Br3nd@K!"
+    },
+    {
+        "account_name": "matthew.l",
+        "password": "M@tthewL2024"
+    },
+    {
+        "account_name": "kelly.m",
+        "password": "K3llyM#Secure"
+    },
+    {
+        "account_name": "justin_t",
+        "password": "Just1nT!@2023"
+    },
+    {
+        "account_name": "heather.r",
+        "password": "H3@th3rR!"
+    },
+    {
+        "account_name": "chris_w",
+        "password": "Chr!sW#2024"
+    },
+    {
+        "account_name": "olivia.c",
+        "password": "0l!viaC2023"
+    }
+]

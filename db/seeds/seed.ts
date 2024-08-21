@@ -21,7 +21,7 @@ interface characterInput {
     damage: number;
     point_cost: number;
     shop_cost: number;
-    ability_id: number;
+    ability_name: string;
     image_url: string;
 }
 
@@ -160,6 +160,7 @@ const seed = (
                 `
                 INSERT INTO abilities (name, description, type, strength, image_url, ability_cost)
                     VALUES %L
+                    RETURNING *
                 `,
                 abilities_data.map((ability: abilityInput) => [
                     ability.name,
@@ -172,21 +173,31 @@ const seed = (
             );
             return db.query(queryStr);
         })
-        .then(() => {
-            const queryStr: object = format(
-                `
-                INSERT INTO characters (name, health, damage, point_cost, shop_cost, ability_id, image_url)
-                    VALUES %L
-                `,
-                characters_data.map((character: characterInput) => [
+        .then((abilityData: any) => {
+            const insertArray: Array<object> = [];
+
+            characters_data.forEach((character: characterInput) => {
+                const ability_id = abilityData.rows.find(
+                    (ability: any) => character.ability_name === ability.name
+                ).ability_id;
+
+                insertArray.push([
                     character.name,
                     character.health,
                     character.damage,
                     character.point_cost,
                     character.shop_cost,
-                    character.ability_id,
+                    ability_id,
                     character.image_url,
-                ])
+                ]);
+            });
+
+            const queryStr: object = format(
+                `
+                INSERT INTO characters (name, health, damage, point_cost, shop_cost, ability_id, image_url)
+                    VALUES %L
+                `,
+                insertArray
             );
             return db.query(queryStr);
         })
