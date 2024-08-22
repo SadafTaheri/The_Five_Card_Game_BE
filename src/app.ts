@@ -1,11 +1,26 @@
 import express, { Request, Response, NextFunction } from "express";
-import { getAllData } from "./Controllers/controllers";
+
+import { getAllAbilities } from "./Controllers/abilitiesControllers";
 
 const app = express();
-const port = 3000;
+app.use(express.json());
 
-app.get("/api", getAllData);
+app.use("/api/abilities", getAllAbilities);
+
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
+});
+
+export default app;
+// const port = 3000;
+
+// app.get("/api", getAllData);
 
 // app.get("/api/users", getAllAbilities);
 
-export default app;
+// app.listen(port, () => {
+//     console.log(`Server running on port ${port}`);
+// });
+// export default app;

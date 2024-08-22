@@ -27,9 +27,7 @@ describe("GET response", () => {
 describe("GET all abilities", () => {
   it("Should return a single ability in the given format", async () => {
     const response = await request(app).get("/api/abilities").expect(200);
-    // .then(({abilities}) => {
-    //     console.log(abilities)
-    // })
-  });
+    expect(Array.isArray(response.body)).toBe(true)
 });
-export {}
+});
+export {};
