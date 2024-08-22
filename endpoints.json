@@ -1,0 +1,151 @@
+{
+  "GET /api": {
+    "method": "GET",
+    "url": "/api",
+    "description": "Checks if the API is working and provides a list of available endpoints"
+  },
+  "GET /api/abilities": {
+    "method": "GET",
+    "url": "/api/abilities",
+    "description": "Fetches all abilities",
+    "response": {
+      "status": 200,
+      "body": [
+        {
+          "ability_id": 1,
+          "name": "ability_1",
+          "description": "description_1",
+          "type": "attack",
+          "strength": 1,
+          "image_url": "url_1",
+          "ability_cost": 1
+        },
+        "...additional abilities..."
+      ]
+    }
+  },
+  "GET /api/accounts": {
+    "method": "GET",
+    "url": "/api/accounts",
+    "description": "Fetches all accounts",
+    "response": {
+      "status": 200,
+      "body": [
+        {
+          "account_id": 1,
+          "account_name": "account_1",
+          "password": "password_1"
+        },
+        "...additional accounts..."
+      ]
+    }
+  },
+  "GET /api/decks": {
+    "method": "GET",
+    "url": "/api/decks",
+    "description": "Fetches all decks",
+    "response": {
+      "status": 200,
+      "body": [
+        {
+          "deck_id": 1,
+          "name": "deck_1",
+          "profile_id": 1
+        },
+        "...additional decks..."
+      ]
+    }
+  },
+  "GET /api/characters": {
+    "method": "GET",
+    "url": "/api/characters",
+    "description": "Fetches all characters",
+    "response": {
+      "status": 200,
+      "body": [
+        {
+          "character_id": 1,
+          "name": "character_1",
+          "health": 10,
+          "damage": 10,
+          "point_cost": 100,
+          "shop_cost": 50,
+          "ability_id": 1,
+          "image_url": "url_1"
+        },
+        "...additional characters..."
+      ]
+    }
+  },
+  "GET /api/decks-characters": {
+    "method": "GET",
+    "url": "/api/decks-characters",
+    "description": "Fetches all deck-character relations",
+    "response": {
+      "status": 200,
+      "body": [
+        {
+          "id": 1,
+          "deck_id": 1,
+          "character_id": 1
+        },
+        "...additional deck-character relations..."
+      ]
+    }
+  },
+  "GET /api/profiles": {
+    "method": "GET",
+    "url": "/api/profiles",
+    "description": "Fetches all profiles",
+    "response": {
+      "status": 200,
+      "body": [
+        {
+          "profile_id": 1,
+          "account_id": 1,
+          "username": "profile_1",
+          "currency": 1000
+        },
+        "...additional profiles..."
+      ]
+    }
+  },
+  "GET /api/profiles-characters": {
+    "method": "GET",
+    "url": "/api/profiles-characters",
+    "description": "Fetches all profile-character relations",
+    "response": {
+      "status": 200,
+      "body": [
+        {
+          "id": 1,
+          "profile_id": 1,
+          "character_id": 1
+        },
+        "...additional profile-character relations..."
+      ]
+    }
+  },
+  "GET /api/characters/:character_id": {
+    "method": "GET",
+    "url": "/api/characters/:character_id",
+    "description": "Fetches a specific character by its ID and includes associated ability details",
+    "response": {
+      "status": 200,
+      "body": {
+        "name": "superman",
+        "health": 20,
+        "damage": 20,
+        "ability": {
+          "name": "ability_name",
+          "description": "ability_description",
+          "type": "ability_type",
+          "strength": 10,
+          "ability_cost": 100
+        },
+        "point_cost": 1500,
+        "imageURL": "https://example.com/image.png"
+      }
+    }
+  }
+}
