@@ -5,7 +5,11 @@ import { getAllAccounts } from "./Controllers/accountsController";
 import { getAllDecks } from "./Controllers/decksController";
 import { getAllCharacters } from "./Controllers/charactersController";
 import { getAllDecksCharacters } from "./Controllers/decksCharactersController";
-import { getAllProfiles } from "./Controllers/profilesController";
+import {
+  createProfile,
+  getAllProfiles,
+  updateProfile,
+} from "./Controllers/profilesController";
 import { getAllProfilesCharacters } from "./Controllers/profilesCharactersController";
 import { getCharacterById } from "./Controllers/characterByIdController";
 import endpoints from "./endpoints";
@@ -38,6 +42,9 @@ app.get("/api/profiles", getAllProfiles);
 app.get("/api/profiles-characters", getAllProfilesCharacters);
 
 app.get("/api/characters/:character_id", getCharacterById);
+
+app.post("/api/profiles", createProfile);
+app.patch("/api/profiles/:profile_id", updateProfile);
 
 app.use((err: any, req: Request, res: Response, next: any) => {
   if (err.code === "22P02" || err.code === "23502") {
