@@ -147,5 +147,50 @@
         "imageURL": "https://example.com/image.png"
       }
     }
+  },
+  "POST /api/profiles": {
+    "method": "POST",
+    "url": "/api/profiles",
+    "description": "Creates a new profile",
+    "request": {
+      "body": {
+        "account_id": 1,
+        "username": "new_profile",
+        "currency": 500
+      }
+    },
+    "response": {
+      "status": 201,
+      "body": {
+        "profile": {
+          "profile_id": 1,
+          "account_id": 1,
+          "username": "new_profile",
+          "currency": 500
+        }
+      }
+    },
+    "PATCH /api/profiles/:profile_id": {
+      "method": "PATCH",
+      "url": "/api/profiles/:profile_id",
+      "description": "Updates an existing profile by ID",
+      "request": {
+        "body": {
+          "username": "updated_profile",
+          "currency": 600
+        }
+      },
+      "response": {
+        "status": 200,
+        "body": {
+          "profile": {
+            "profile_id": 1,
+            "account_id": 1,
+            "username": "updated_profile",
+            "currency": 600
+          }
+        }
+      }
+    }
   }
 }

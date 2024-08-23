@@ -8,6 +8,9 @@ const endpoints = {
   "GET /api/decks-characters": "Fetches all deck-character relations",
   "GET /api/profiles": "Fetches all profiles",
   "GET /api/profiles-characters": "Fetches all profile-character relations",
+  "POST /api/profiles": "Creates a new profile",
+  "PATCH /api/profiles/:profile_id":
+    "Updates an existing profile by profile ID",
 };
 
 export default endpoints;

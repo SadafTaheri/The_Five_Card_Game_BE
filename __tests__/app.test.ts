@@ -173,6 +173,87 @@ describe("GET /api/profiles-characters", () => {
   });
 });
 
+describe("POST /api/profiles", () => {
+  test("Should create a new profile and respond with 201 status and correct data", async () => {
+    const newProfile = {
+      account_id: 1,
+      username: "new_profile",
+      currency: 100,
+    };
+    const response = await request(app)
+      .post("/api/profiles")
+      .send(newProfile)
+      .expect(201);
+
+    expect(response.body.profile).toEqual(
+      expect.objectContaining({
+        profile_id: expect.any(Number),
+        account_id: newProfile.account_id,
+        username: newProfile.username,
+        currency: newProfile.currency,
+      })
+    );
+  });
+  test("Should respond with 400 status for invalid data", async () => {
+    const invalidProfile = {
+      account_id: "not_a_number", // Invalid account_id
+      username: "new_profile",
+      currency: 100,
+    };
+    const response = await request(app)
+      .post("/api/profiles")
+      .send(invalidProfile)
+      .expect(400);
+
+    expect(response.body.msg).toBe("400 - Bad Request");
+  });
+});
+
+describe("PATCH /api/profiles/:profile_id", () => {
+  test("Should update an existing profile and respond with 200 status and correct data", async () => {
+    const updatedProfile = {
+      username: "updated_profile",
+      currency: 200,
+    };
+    const response = await request(app)
+      .patch("/api/profiles/1")
+      .send(updatedProfile)
+      .expect(200);
+
+    expect(response.body.profile).toEqual(
+      expect.objectContaining({
+        profile_id: 1,
+        username: updatedProfile.username,
+        currency: updatedProfile.currency,
+      })
+    );
+  });
+  test("Should respond with 404 status for non-existent profile_id", async () => {
+    const updatedProfile = {
+      username: "non_existent_profile",
+      currency: 200,
+    };
+    const response = await request(app)
+      .patch("/api/profiles/999")
+      .send(updatedProfile)
+      .expect(404);
+
+    expect(response.body.message).toBe("Profile not found");
+  });
+  test("Should respond with 400 status for invalid profile_id", async () => {
+    const updatedProfile = {
+      username: "invalid_profile",
+      currency: 200,
+    };
+    const response = await request(app)
+      .patch("/api/profiles/invalid_id")
+      .send(updatedProfile)
+      .expect(400);
+
+    expect(response.body.msg).toBe("400 - Bad Request");
+  });
+});
+
 describe("GET /api/characters/:character_id", () => {
   it("responds with a character object including ability details", () => {
     const expectedCharacter = {
