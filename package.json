@@ -2,23 +2,16 @@
   "name": "the-five-cardgame-be",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/listen.js",
+  "main": "listen.js",
   "scripts": {
-    "test": "jest",
-    "setup-dbs": "psql -f ./db/setup_db.sql",
-    "run-seed": "node dist/db/seeds/run-seed.js",
-    "build": "tsc",
-    "start": "npm run build && node dist/listen.js",
-    "seed": "node dist/db/seeds/seed.js",
-    "seed-prod": "NODE_ENV=production npm run seed"
+    "start": "node dist/listen.js",
+    "seed-prod": "NODE_ENV=production npm run seed",
+    "seed": "ts-node src/db/seeds/seed.ts" // Assuming you have a seed script in TypeScript
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
-    "pg": "^8.12.0",
-    "pg-format": "^1.0.4"
+    "pg": "^8.12.0"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.25.4",
