@@ -1,0 +1,235 @@
+{
+  "GET /api": {
+    "method": "GET",
+    "url": "/api",
+    "description": "Checks if the API is working and provides a list of available endpoints"
+  },
+  "GET /api/abilities": {
+    "method": "GET",
+    "url": "/api/abilities",
+    "description": "Fetches all abilities",
+    "response": {
+      "status": 200,
+      "body": [
+        {
+          "ability_id": 1,
+          "name": "ability_1",
+          "description": "description_1",
+          "type": "attack",
+          "strength": 1,
+          "image_url": "url_1",
+          "ability_cost": 1
+        },
+        "...additional abilities..."
+      ]
+    }
+  },
+  "GET /api/accounts": {
+    "method": "GET",
+    "url": "/api/accounts",
+    "description": "Fetches all accounts",
+    "response": {
+      "status": 200,
+      "body": [
+        {
+          "account_id": 1,
+          "account_name": "account_1",
+          "password": "password_1"
+        },
+        "...additional accounts..."
+      ]
+    }
+  },
+  "GET /api/decks": {
+    "method": "GET",
+    "url": "/api/decks",
+    "description": "Fetches all decks",
+    "response": {
+      "status": 200,
+      "body": [
+        {
+          "deck_id": 1,
+          "name": "deck_1",
+          "profile_id": 1
+        },
+        "...additional decks..."
+      ]
+    }
+  },
+  "GET /api/characters": {
+    "method": "GET",
+    "url": "/api/characters",
+    "description": "Fetches all characters",
+    "response": {
+      "status": 200,
+      "body": [
+        {
+          "character_id": 1,
+          "name": "character_1",
+          "health": 10,
+          "damage": 10,
+          "point_cost": 100,
+          "shop_cost": 50,
+          "ability_id": 1,
+          "image_url": "url_1"
+        },
+        "...additional characters..."
+      ]
+    }
+  },
+  "GET /api/decks-characters": {
+    "method": "GET",
+    "url": "/api/decks-characters",
+    "description": "Fetches all deck-character relations",
+    "response": {
+      "status": 200,
+      "body": [
+        {
+          "id": 1,
+          "deck_id": 1,
+          "character_id": 1
+        },
+        "...additional deck-character relations..."
+      ]
+    }
+  },
+  "GET /api/profiles": {
+    "method": "GET",
+    "url": "/api/profiles",
+    "description": "Fetches all profiles",
+    "response": {
+      "status": 200,
+      "body": [
+        {
+          "profile_id": 1,
+          "account_id": 1,
+          "username": "profile_1",
+          "currency": 1000
+        },
+        "...additional profiles..."
+      ]
+    }
+  },
+  "GET /api/profiles-characters": {
+    "method": "GET",
+    "url": "/api/profiles-characters",
+    "description": "Fetches all profile-character relations",
+    "response": {
+      "status": 200,
+      "body": [
+        {
+          "id": 1,
+          "profile_id": 1,
+          "character_id": 1
+        },
+        "...additional profile-character relations..."
+      ]
+    }
+  },
+  "GET /api/characters/:character_id": {
+    "method": "GET",
+    "url": "/api/characters/:character_id",
+    "description": "Fetches a specific character by its ID and includes associated ability details",
+    "response": {
+      "status": 200,
+      "body": {
+        "name": "character_1",
+        "health": 10,
+        "damage": 10,
+        "ability": {
+          "name": "ability_1",
+          "description": "description_1",
+          "type": "attack",
+          "strength": 1,
+          "ability_cost": 1
+        },
+        "point_cost": 100,
+        "imageURL": "url_1"
+      }
+    }
+  },
+  "POST /api/profiles": {
+    "method": "POST",
+    "url": "/api/profiles",
+    "description": "Creates a new profile",
+    "request": {
+      "body": {
+        "account_id": 1,
+        "username": "new_profile",
+        "currency": 500
+      }
+    },
+    "response": {
+      "status": 201,
+      "body": {
+        "profile": {
+          "profile_id": 1,
+          "account_id": 1,
+          "username": "new_profile",
+          "currency": 500
+        }
+      }
+    }
+  },
+  "PATCH /api/profiles/:profile_id": {
+    "method": "PATCH",
+    "url": "/api/profiles/:profile_id",
+    "description": "Updates an existing profile by ID",
+    "request": {
+      "body": {
+        "username": "updated_profile",
+        "currency": 600
+      }
+    },
+    "response": {
+      "status": 200,
+      "body": {
+        "profile": {
+          "profile_id": 1,
+          "account_id": 1,
+          "username": "updated_profile",
+          "currency": 600
+        }
+      }
+    }
+  },
+  "GET /api/decks/:deck_id": {
+    "method": "GET",
+    "url": "/api/decks/:deck_id",
+    "description": "Fetches a specific deck by its ID and includes associated characters",
+    "response": {
+      "status": 200,
+      "body": {
+        "deck_id": 1,
+        "name": "deck_1",
+        "profile_id": 1,
+        "characters": [
+          {
+            "character_id": 1,
+            "name": "character_1",
+            "health": 10,
+            "damage": 10,
+            "point_cost": 100,
+            "shop_cost": 50,
+            "image_url": "url_1"
+          },
+          "...additional characters..."
+        ]
+      }
+    },
+    "errorResponses": {
+      "404": {
+        "status": 404,
+        "body": {
+          "msg": "Deck with ID :deck_id not found"
+        }
+      },
+      "400": {
+        "status": 400,
+        "body": {
+          "msg": "400 - Bad Request: Invalid deck ID"
+        }
+      }
+    }
+  }
+}

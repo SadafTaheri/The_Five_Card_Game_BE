@@ -1,9 +1,18 @@
-import * as testData from "../db/data/test-data";
-const db = require("../db/connection");
-const seed = require("../db/seeds/seed");
 import request from "supertest";
 import app from "../src/app";
-import { describe } from "node:test";
+import { Pool } from "pg";
+import connection from "../db/connection";
+import { setupTestDB, teardownTestDB } from "../db/setupTestDB";
+const testData = require("../db/data/test-data");
+import endpoints from "../src/endpoints";
+const seed = require("../db/seeds/seed");
+
+let db: Pool;
+
+beforeAll(async () => {
+  db = connection;
+  await setupTestDB();
+});
 
 beforeEach(() =>
   seed(
@@ -14,20 +23,317 @@ beforeEach(() =>
     testData.decks_data
   )
 );
-afterAll(() => db.end());
 
-describe("GET response", () => {
-  it("Should response 200 when just requested /api", async () => {
-    const response = await request(app).get("/api").expect(200);
-    // .then(({data}) => {
-    //     expect(data).toBe()
-    // })
+afterAll(async () => {
+  await teardownTestDB();
+  await db.end();
+});
+
+describe("GET /api", () => {
+  it("respond with a json detailing all available endpoints", () => {
+    return request(app)
+      .get("/api")
+      .expect(200)
+      .then(({ body }) => {
+        expect(body.endpoints).toEqual(endpoints);
+      });
   });
 });
-describe("GET all abilities", () => {
-  it("Should return a single ability in the given format", async () => {
+
+describe("GET /api/abilities", () => {
+  test("Should respond with 200 status and correct data", async () => {
     const response = await request(app).get("/api/abilities").expect(200);
-    expect(Array.isArray(response.body)).toBe(true)
+
+    expect(response.body).toHaveLength(8);
+    expect(response.body).toEqual(
+      expect.arrayContaining([
+        expect.objectContaining({
+          ability_id: expect.any(Number),
+          name: expect.any(String),
+          description: expect.any(String),
+          type: expect.any(String),
+          strength: expect.any(Number),
+          image_url: expect.any(String),
+          ability_cost: expect.any(Number),
+        }),
+      ])
+    );
+  });
 });
+
+describe("GET /api/accounts", () => {
+  test("Should respond with 200 status and correct data", async () => {
+    const response = await request(app).get("/api/accounts").expect(200);
+
+    expect(response.body).toHaveLength(7);
+    expect(response.body).toEqual(
+      expect.arrayContaining([
+        expect.objectContaining({
+          account_id: expect.any(Number),
+          account_name: expect.any(String),
+          password: expect.any(String),
+        }),
+      ])
+    );
+  });
 });
-export {};
+
+describe("GET /api/decks", () => {
+  test("Should respond with 200 status and correct data", async () => {
+    const response = await request(app).get("/api/decks").expect(200);
+
+    expect(response.body).toHaveLength(7);
+    expect(response.body).toEqual(
+      expect.arrayContaining([
+        expect.objectContaining({
+          deck_id: expect.any(Number),
+          name: expect.any(String),
+          profile_id: expect.any(Number),
+        }),
+      ])
+    );
+  });
+});
+
+describe("GET /api/characters", () => {
+  test("Should respond with 200 status and correct data", async () => {
+    const response = await request(app).get("/api/characters").expect(200);
+
+    expect(response.body).toHaveLength(7);
+    expect(response.body).toEqual(
+      expect.arrayContaining([
+        expect.objectContaining({
+          character_id: expect.any(Number),
+          name: expect.any(String),
+          health: expect.any(Number),
+          damage: expect.any(Number),
+          point_cost: expect.any(Number),
+          shop_cost: expect.any(Number),
+          ability_id: expect.any(Number),
+          image_url: expect.any(String),
+        }),
+      ])
+    );
+  });
+});
+
+describe("GET /api/decks-characters", () => {
+  test("Should respond with 200 status and correct data", async () => {
+    const response = await request(app)
+      .get("/api/decks-characters")
+      .expect(200);
+
+    expect(response.body).toHaveLength(35);
+    expect(response.body).toEqual(
+      expect.arrayContaining([
+        expect.objectContaining({
+          id: expect.any(Number),
+          deck_id: expect.any(Number),
+          character_id: expect.any(Number),
+        }),
+      ])
+    );
+  });
+});
+
+describe("GET /api/profiles", () => {
+  test("Should respond with 200 status and correct data", async () => {
+    const response = await request(app).get("/api/profiles").expect(200);
+
+    expect(response.body).toHaveLength(7);
+    expect(response.body).toEqual(
+      expect.arrayContaining([
+        expect.objectContaining({
+          profile_id: expect.any(Number),
+          account_id: expect.any(Number),
+          username: expect.any(String),
+          currency: expect.any(Number),
+        }),
+      ])
+    );
+  });
+});
+
+describe("GET /api/profiles-characters", () => {
+  test("Should respond with 200 status and correct data", async () => {
+    const response = await request(app)
+      .get("/api/profiles-characters")
+      .expect(200);
+
+    expect(response.body).toHaveLength(35);
+    expect(response.body).toEqual(
+      expect.arrayContaining([
+        expect.objectContaining({
+          id: expect.any(Number),
+          profile_id: expect.any(Number),
+          character_id: expect.any(Number),
+        }),
+      ])
+    );
+  });
+});
+
+describe("POST /api/profiles", () => {
+  test("Should create a new profile and respond with 201 status and correct data", async () => {
+    const newProfile = {
+      account_id: 1,
+      username: "new_profile",
+      currency: 100,
+    };
+    const response = await request(app)
+      .post("/api/profiles")
+      .send(newProfile)
+      .expect(201);
+
+    expect(response.body.profile).toEqual(
+      expect.objectContaining({
+        profile_id: expect.any(Number),
+        account_id: newProfile.account_id,
+        username: newProfile.username,
+        currency: newProfile.currency,
+      })
+    );
+  });
+  test("Should respond with 400 status for invalid data", async () => {
+    const invalidProfile = {
+      account_id: "not_a_number", // Invalid account_id
+      username: "new_profile",
+      currency: 100,
+    };
+    const response = await request(app)
+      .post("/api/profiles")
+      .send(invalidProfile)
+      .expect(400);
+
+    expect(response.body.msg).toBe("400 - Bad Request");
+  });
+});
+
+describe("PATCH /api/profiles/:profile_id", () => {
+  test("Should update an existing profile and respond with 200 status and correct data", async () => {
+    const updatedProfile = {
+      username: "updated_profile",
+      currency: 200,
+    };
+    const response = await request(app)
+      .patch("/api/profiles/1")
+      .send(updatedProfile)
+      .expect(200);
+
+    expect(response.body.profile).toEqual(
+      expect.objectContaining({
+        profile_id: 1,
+        username: updatedProfile.username,
+        currency: updatedProfile.currency,
+      })
+    );
+  });
+  test("Should respond with 404 status for non-existent profile_id", async () => {
+    const updatedProfile = {
+      username: "non_existent_profile",
+      currency: 200,
+    };
+    const response = await request(app)
+      .patch("/api/profiles/999")
+      .send(updatedProfile)
+      .expect(404);
+
+    expect(response.body.message).toBe("Profile not found");
+  });
+  test("Should respond with 400 status for invalid profile_id", async () => {
+    const updatedProfile = {
+      username: "invalid_profile",
+      currency: 200,
+    };
+    const response = await request(app)
+      .patch("/api/profiles/invalid_id")
+      .send(updatedProfile)
+      .expect(400);
+
+    expect(response.body.msg).toBe("400 - Bad Request");
+  });
+});
+
+describe("GET /api/characters/:character_id", () => {
+  it("responds with a character object including ability details", () => {
+    const expectedCharacter = {
+      name: "character_1",
+      health: 10,
+      damage: 10,
+      ability: {
+        name: "ability_1",
+        description: "description_1",
+        type: "attack",
+        strength: 1,
+        ability_cost: 1,
+      },
+      point_cost: 100,
+      imageURL: "url_1",
+    };
+
+    return request(app)
+      .get("/api/characters/1")
+      .expect(200)
+      .then(({ body }) => {
+        expect(body.character).toEqual(expectedCharacter);
+      });
+  });
+
+  it("responds with 404 for a non-existent character", () => {
+    return request(app)
+      .get("/api/characters/999")
+      .expect(404)
+      .then(({ body }) => {
+        expect(body.message).toBe("Character not found");
+      });
+  });
+  it("responds with 400 for an invalid character_id", () => {
+    return request(app)
+      .get("/api/characters/invalid_id")
+      .expect(400)
+      .then(({ body }) => {
+        expect(body.msg).toBe("400 - Bad Request");
+      });
+  });
+});
+
+describe("GET /api/decks/:deck_id", () => {
+  it("responds with a deck and its associated characters when given a valid deck_id", async () => {
+    const deckId = 1;
+
+    const response = await request(app).get(`/api/decks/${deckId}`).expect(200);
+
+    const { deck_id, name, profile_id, characters } = response.body;
+
+    expect(deck_id).toBe(deckId);
+    expect(name).toBeDefined();
+    expect(profile_id).toBeDefined();
+    expect(Array.isArray(characters)).toBe(true);
+  });
+
+  it("responds with a 404 error if the deck_id is not found", async () => {
+    const invalidDeckId = 9999;
+
+    const response = await request(app)
+      .get(`/api/decks/${invalidDeckId}`)
+      .expect(404);
+
+    expect(response.body).toHaveProperty(
+      "msg",
+      `Deck with ID ${invalidDeckId} not found`
+    );
+  });
+
+  it("responds with a 400 error if the deck_id is invalid", async () => {
+    const invalidDeckId = "invalid-id";
+
+    const response = await request(app)
+      .get(`/api/decks/${invalidDeckId}`)
+      .expect(400);
+
+    expect(response.body).toHaveProperty(
+      "msg",
+      "400 - Bad Request: Invalid deck ID"
+    );
+  });
+});

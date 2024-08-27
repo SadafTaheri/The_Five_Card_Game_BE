@@ -1,9 +1,10 @@
 import connection from "../../db/connection";
-// import {QueryResult} from 'pg';
 
-export async function setAllAbilities() {
-  const [rows] = await connection.query("SELECT * FROM users");
-  return rows;
-  // }catch (error){
-  //     throw new Error('Database query failed: ' + error.message)
-}
+export const fetchAllAbilities = async () => {
+  try {
+    const result = await connection.query("SELECT * FROM abilities;");
+    return result.rows;
+  } catch (err) {
+    throw new Error(`Error fetching abilities: ${(err as Error).message}`);
+  }
+};
