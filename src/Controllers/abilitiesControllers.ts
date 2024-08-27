@@ -1,10 +1,10 @@
-import { Request, Response } from "express";
+import { Request, Response, NextFunction } from "express";
 import { fetchAllAbilities } from "../Models/abilitiesModels";
 
 export const getAllAbilities = async (
   req: Request,
   res: Response,
-  err: Error
+  next: NextFunction
 ) => {
   try {
     const abilities = await fetchAllAbilities();
