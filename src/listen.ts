@@ -5,7 +5,9 @@ import dotenv from "dotenv";
 dotenv.config();
 
 // Get the port from environment variables or default to 9090
-const { PORT = 9090 } = process.env;
+const PORT = process.env.PORT || 9090;
 
 // Start the server
-app.listen(PORT, () => console.log(`Listening on ${PORT}...`));
+app.listen(PORT, () => {
+  console.log(`Listening on ${PORT}...`);
+});
