@@ -1,6 +1,5 @@
 import express, { Request, Response } from "express";
 
-import { getAllAbilities } from "./Controllers/abilitiesControllers";
 import { getAllAccounts } from "./Controllers/accountsController";
 import { getAllDecks } from "./Controllers/decksController";
 import { getAllCharacters } from "./Controllers/charactersController";
@@ -14,6 +13,7 @@ import { getAllProfilesCharacters } from "./Controllers/profilesCharactersContro
 import { getCharacterById } from "./Controllers/characterByIdController";
 import endpoints from "./endpoints";
 import dotenv from "dotenv";
+import { getAllAbilities } from "./Controllers/abilitiesControllers";
 dotenv.config();
 
 const app = express();
