@@ -9,8 +9,8 @@
     "run-seed": "node dist/db/seeds/run-seed.js",
     "build": "tsc",
     "start": "npm run build && node dist/listen.js",
-    "seed": "node dist/db/seeds/seed.js",  // Add this line for seeding
-    "seed-prod": "NODE_ENV=production npm run seed" // Use this to seed in production
+    "seed": "node dist/db/seeds/seed.js",
+    "seed-prod": "NODE_ENV=production npm run seed"
   },
   "author": "",
   "license": "ISC",
