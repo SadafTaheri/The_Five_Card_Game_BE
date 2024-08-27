@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node dist/listen.js",
     "seed-prod": "NODE_ENV=production npm run seed",
-    "seed": "ts-node src/db/seeds/seed.ts" // Assuming you have a seed script in TypeScript
+    "seed": "ts-node db/seeds/seed.ts"
   },
   "dependencies": {
     "dotenv": "^16.4.5",
