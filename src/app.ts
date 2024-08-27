@@ -14,6 +14,7 @@ import { getCharacterById } from "./Controllers/characterByIdController";
 import endpoints from "./endpoints";
 import dotenv from "dotenv";
 import { getAllAbilities } from "./Controllers/abilitiesControllers";
+import { getDeckById } from "./Controllers/deckByIdController";
 dotenv.config();
 
 const app = express();
@@ -33,6 +34,8 @@ app.get("/api/accounts", getAllAccounts);
 
 app.get("/api/decks", getAllDecks);
 
+app.get("/api/decks/:deck_id", getDeckById);
+
 app.get("/api/characters", getAllCharacters);
 
 app.get("/api/decks-characters", getAllDecksCharacters);
@@ -44,6 +47,7 @@ app.get("/api/profiles-characters", getAllProfilesCharacters);
 app.get("/api/characters/:character_id", getCharacterById);
 
 app.post("/api/profiles", createProfile);
+
 app.patch("/api/profiles/:profile_id", updateProfile);
 
 app.use((err: any, req: Request, res: Response, next: any) => {

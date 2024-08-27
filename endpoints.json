@@ -133,18 +133,18 @@
     "response": {
       "status": 200,
       "body": {
-        "name": "superman",
-        "health": 20,
-        "damage": 20,
+        "name": "character_1",
+        "health": 10,
+        "damage": 10,
         "ability": {
-          "name": "ability_name",
-          "description": "ability_description",
-          "type": "ability_type",
-          "strength": 10,
-          "ability_cost": 100
+          "name": "ability_1",
+          "description": "description_1",
+          "type": "attack",
+          "strength": 1,
+          "ability_cost": 1
         },
-        "point_cost": 1500,
-        "imageURL": "https://example.com/image.png"
+        "point_cost": 100,
+        "imageURL": "url_1"
       }
     }
   },
@@ -169,26 +169,65 @@
           "currency": 500
         }
       }
+    }
+  },
+  "PATCH /api/profiles/:profile_id": {
+    "method": "PATCH",
+    "url": "/api/profiles/:profile_id",
+    "description": "Updates an existing profile by ID",
+    "request": {
+      "body": {
+        "username": "updated_profile",
+        "currency": 600
+      }
     },
-    "PATCH /api/profiles/:profile_id": {
-      "method": "PATCH",
-      "url": "/api/profiles/:profile_id",
-      "description": "Updates an existing profile by ID",
-      "request": {
-        "body": {
+    "response": {
+      "status": 200,
+      "body": {
+        "profile": {
+          "profile_id": 1,
+          "account_id": 1,
           "username": "updated_profile",
           "currency": 600
         }
-      },
-      "response": {
-        "status": 200,
+      }
+    }
+  },
+  "GET /api/decks/:deck_id": {
+    "method": "GET",
+    "url": "/api/decks/:deck_id",
+    "description": "Fetches a specific deck by its ID and includes associated characters",
+    "response": {
+      "status": 200,
+      "body": {
+        "deck_id": 1,
+        "name": "deck_1",
+        "profile_id": 1,
+        "characters": [
+          {
+            "character_id": 1,
+            "name": "character_1",
+            "health": 10,
+            "damage": 10,
+            "point_cost": 100,
+            "shop_cost": 50,
+            "image_url": "url_1"
+          },
+          "...additional characters..."
+        ]
+      }
+    },
+    "errorResponses": {
+      "404": {
+        "status": 404,
         "body": {
-          "profile": {
-            "profile_id": 1,
-            "account_id": 1,
-            "username": "updated_profile",
-            "currency": 600
-          }
+          "msg": "Deck with ID :deck_id not found"
+        }
+      },
+      "400": {
+        "status": 400,
+        "body": {
+          "msg": "400 - Bad Request: Invalid deck ID"
         }
       }
     }

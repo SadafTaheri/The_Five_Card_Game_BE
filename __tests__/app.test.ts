@@ -296,3 +296,44 @@ describe("GET /api/characters/:character_id", () => {
       });
   });
 });
+
+describe("GET /api/decks/:deck_id", () => {
+  it("responds with a deck and its associated characters when given a valid deck_id", async () => {
+    const deckId = 1;
+
+    const response = await request(app).get(`/api/decks/${deckId}`).expect(200);
+
+    const { deck_id, name, profile_id, characters } = response.body;
+
+    expect(deck_id).toBe(deckId);
+    expect(name).toBeDefined();
+    expect(profile_id).toBeDefined();
+    expect(Array.isArray(characters)).toBe(true);
+  });
+
+  it("responds with a 404 error if the deck_id is not found", async () => {
+    const invalidDeckId = 9999;
+
+    const response = await request(app)
+      .get(`/api/decks/${invalidDeckId}`)
+      .expect(404);
+
+    expect(response.body).toHaveProperty(
+      "msg",
+      `Deck with ID ${invalidDeckId} not found`
+    );
+  });
+
+  it("responds with a 400 error if the deck_id is invalid", async () => {
+    const invalidDeckId = "invalid-id";
+
+    const response = await request(app)
+      .get(`/api/decks/${invalidDeckId}`)
+      .expect(400);
+
+    expect(response.body).toHaveProperty(
+      "msg",
+      "400 - Bad Request: Invalid deck ID"
+    );
+  });
+});
