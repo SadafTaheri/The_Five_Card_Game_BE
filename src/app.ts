@@ -70,7 +70,7 @@
 
 // export default app;
 
-import * as express from "express";
+import express from "express";
 import { Request, Response } from "express";
 import { getAllAccounts } from "./Controllers/accountsController";
 import { getAllDecks } from "./Controllers/decksController";

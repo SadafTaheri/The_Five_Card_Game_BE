@@ -1,7 +1,13 @@
+import * as dotenv from "dotenv";
+import { join } from "path";
+
+// Determine the correct .env file based on NODE_ENV
+const envFile =
+  process.env.NODE_ENV === "test" ? ".env.test" : ".env.development";
+
+dotenv.config({ path: join(__dirname, "..", envFile) });
+
 import app from "./app";
 
-const { PORT = 9090 } = process.env;
-
-app.listen(PORT, () => {
-  console.log(`Listening on ${PORT}...`);
-});
+const port = process.env.PORT || 3000;
+app.listen(port, () => console.log(`Server running on port ${port}`));
