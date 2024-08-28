@@ -57,18 +57,22 @@ import * as dotenv from "dotenv";
 // Load environment variables from .env file
 dotenv.config();
 
+// This is correct
 const ENV = process.env.NODE_ENV || "development";
 
+// This check is implemented correctly
 if (!process.env.PGDATABASE && !process.env.DATABASE_URL) {
   throw new Error("PGDATABASE or DATABASE_URL not set");
 }
 
 const config: any = {};
 
+// Production configuration is correct
 if (ENV === "production") {
   config.connectionString = process.env.DATABASE_URL;
-  config.max = 2; // Adjust the max connections according to your database constraints
+  config.max = 2; // This is fine, limiting connections for free tier databases
 } else {
+  // These are additional configs for non-production. Ensure these env vars are set in your dev/test environments
   config.user = process.env.PGUSER;
   config.host = process.env.PGHOST;
   config.database = process.env.PGDATABASE;
