@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node dist/src/listen.js",
     "seed-prod": "NODE_ENV=production npm run seed",
-    "seed": "ts-node db/seeds/seed.ts",
+    "seed": "node dist/db/seeds/seed.js",
     "test": "jest",
     "build": "npx tsc"
   },
