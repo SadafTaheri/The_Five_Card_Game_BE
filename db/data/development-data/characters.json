@@ -42,7 +42,7 @@
     "point_cost": "640",
     "shop_cost": "3000",
     "ability_name": "Titan Fist",
-    "image_url": "https://gdm-assets.b-cdn.net/images/ncavvykf/gfinityesports/4eeff720a719e5148b7fe191dc4d7b6bb8a33099-1920x1080.jpg?rect=0,36,1920,1008&w=1200&h=630&auto=format"
+    "image_url": "peterGriffin.webp"
   },
   {
     "name": "Homer Simpson",
@@ -312,7 +312,7 @@
     "point_cost": "755",
     "shop_cost": "4300",
     "ability_name": "Blade Fury",
-    "image_url": "https://www.joblo.com/wp-content/uploads/2023/07/guardians-of-the-galaxy-3-zoe-saldana-gamora-ending.jpg"
+    "image_url": "gamora.webp"
   },
   {
     "name": "Star-Lord",
@@ -330,7 +330,7 @@
     "point_cost": "805",
     "shop_cost": "4400",
     "ability_name": "Titan Smash",
-    "image_url": "https://cdn.marvel.com/content/1x/025drx_ons_inl_03_3.jpg"
+    "image_url": "drax.jpg"
   },
   {
     "name": "Scarlet Witch",
@@ -366,7 +366,7 @@
     "point_cost": "805",
     "shop_cost": "4500",
     "ability_name": "Symbiote Slam",
-    "image_url": "https://cdn.mos.cms.futurecdn.net/xeNrVBfTrDY4dyzUaemXUW.jpg"
+    "image_url": "venom.jpg"
   },
   {
     "name": "Green Lantern",
@@ -402,7 +402,7 @@
     "point_cost": "755",
     "shop_cost": "4400",
     "ability_name": "Force Slash",
-    "image_url": "https://lumiere-a.akamaihd.net/v1/images/62bf0e03e8459d0001f4881b-image_71900d89.jpeg?region=336%2C0%2C864%2C864"
+    "image_url": "obiWan.ipg"
   },
   {
     "name": "R2-D2",
@@ -456,7 +456,7 @@
     "point_cost": "200",
     "shop_cost": "1000",
     "ability_name": "Brave Heart",
-    "image_url": "https://i.pinimg.com/564x/6d/fa/36/6dfa36e5f7c420921726f3bf378ed113.jpg"
+    "image_url": "tommyPickles.jpg"
   },
   {
     "name": "Angelica Pickles",
@@ -636,7 +636,7 @@
     "point_cost": "275",
     "shop_cost": "1500",
     "ability_name": "Barrier of Purity",
-    "image_url": "https://d23.com/app/uploads/2015/06/snow41160x600.jpg"
+    "image_url": "snowWhite.jpg"
   },
   {
     "name": "Cinderella",
@@ -689,8 +689,7 @@
     "damage": "10",
     "point_cost": "275",
     "shop_cost": "1500",
-    "ability_name": "Fortified Defense",
-    "image_url": "https://miro.medium.com/v2/resize:fit:3840/1*osBQBq0F-R9xP5fi9ZElcw.jpeg"
+    "ability_name": "pocahontas.jpg"
   },
   {
     "name": "Tinker Bell",
@@ -753,7 +752,7 @@
     "point_cost": "200",
     "shop_cost": "1100",
     "ability_name": "Zoomies",
-    "image_url": "https://i0.wp.com/www.rescuediva.com/wp-content/uploads/2022/12/Diva-Article-Max-Grinch-Dog-Prt-Scr-best-movie-walls-com-122322-369.jpg?ssl=1"
+    "image_url": "max.jpg"
   },
   {
     "name": "Grinch",
@@ -780,7 +779,7 @@
     "point_cost": "470",
     "shop_cost": "2500",
     "ability_name": "Ultimate Healing",
-    "image_url": "https://i.pinimg.com/564x/8c/ae/b1/8caeb10df1ea58a687949f59e2c03c10.jpg"
+    "image_url": "krillin.jpg"
   },
   {
     "name": "Tien Shinhan",
@@ -816,7 +815,7 @@
     "point_cost": "535",
     "shop_cost": "2800",
     "ability_name": "Powerful Healing Surge",
-    "image_url": "https://wallpapercave.com/wp/wp9414346.jpg"
+    "image_url": "kakashiHatake.jpg"
   },
   {
     "name": "Sakura Haruno",
@@ -825,7 +824,7 @@
     "point_cost": "470",
     "shop_cost": "2500",
     "ability_name": "Power Surge",
-    "image_url": "https://i.pinimg.com/736x/8b/79/54/8b7954aff74769dd3124818b4fb99eb2.jpg"
+    "image_url": "sakuraHaruno.jpg"
   },
   {
     "name": "Neji Hyuga",
@@ -843,7 +842,7 @@
     "point_cost": "535",
     "shop_cost": "2900",
     "ability_name": "Rasengan Blast",
-    "image_url": "https://static.wikia.nocookie.net/naruto/images/d/d6/Naruto_Part_I.png/revision/latest/scale-to-width-down/300?cb=20210223094656"
+    "image_url": "naruto.webp"
   },
   {
     "name": "Monkey D. Luffy",
@@ -897,7 +896,7 @@
     "point_cost": "470",
     "shop_cost": "2500",
     "ability_name": "Optic Blast",
-    "image_url": "https://www.dexerto.com/cdn-image/wp-content/uploads/2024/03/13/cyclops-x-men-header.jpg?width=3840&quality=60&format=auto"
+    "image_url": "cyclops.jpeg"
   },
   {
     "name": "Storm",
