@@ -337,3 +337,32 @@ describe("GET /api/decks/:deck_id", () => {
     );
   });
 });
+
+// Example test (adjust based on your existing test framework and structure)
+describe("GET /api/decks/:deck_id/full", () => {
+  it("responds with a deck and its associated characters with abilities when given a valid deck_id", async () => {
+    const response = await request(app).get("/api/decks/1/full");
+    expect(response.status).toBe(200);
+    expect(response.body.characters).toEqual(
+      expect.arrayContaining([
+        expect.objectContaining({
+          character_id: expect.any(Number),
+          name: expect.any(String),
+          health: expect.any(Number),
+          damage: expect.any(Number),
+          point_cost: expect.any(Number),
+          shop_cost: expect.any(Number),
+          image_url: expect.any(String),
+          ability: expect.objectContaining({
+            ability_id: expect.any(Number),
+            name: expect.any(String),
+            description: expect.any(String),
+            type: expect.any(String),
+            strength: expect.any(Number),
+            ability_cost: expect.any(Number),
+          }),
+        }),
+      ])
+    );
+  });
+});
